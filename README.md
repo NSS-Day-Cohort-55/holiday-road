@@ -20,6 +20,7 @@ After each teammate clone the repository, each must perform the following steps.
 
 1. In the `scripts` directory, you will see a file named `.Settings.js` (note the dot at the beginning).
 1. Copy that file with `cp .Settings.js Settings.js`. The `Settings.js` file is already in the `.gitignore` file, so it won't ever be tracked by git.
+1. Make a copy of the `db.json.example` file in the `api` directory without the `.example` extension: `cp db.json.example db.json`. The `db.json` file is already in the `.gitignore` file, so it won't ever be tracked by git.
 1. Register an API key for the APIs below that need it.
 1. Copy your key into the appropriate place in the `Settings.js` file.
 1. The team will need to figure out how to import that object into the data provider modules and use it for the `fetch()` calls that need to be performed.
