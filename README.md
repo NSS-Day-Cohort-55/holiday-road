@@ -18,12 +18,14 @@ Only when you feel you understand all of the code, you may then complete testing
 
 After each teammate clone the repository, each must perform the following steps.
 
-1. In the `scripts` directory, you will see a file named `.Settings.js` (note the dot at the beginning).
-1. Copy that file with `cp .Settings.js Settings.js`. The `Settings.js` file is already in the `.gitignore` file, so it won't ever be tracked by git.
+1. In the `scripts` directory, you will see a file named `Settings.js.example`.
+1. Copy that file with `cp Settings.js.example Settings.js`. The `Settings.js` file is already in the `.gitignore` file, so it won't ever be tracked by git.
 1. Make a copy of the `db.json.example` file in the `api` directory without the `.example` extension: `cp db.json.example db.json`. The `db.json` file is already in the `.gitignore` file, so it won't ever be tracked by git.
 1. Register an API key for the APIs below that need it.
 1. Copy your key into the appropriate place in the `Settings.js` file.
 1. The team will need to figure out how to import that object into the data provider modules and use it for the `fetch()` calls that need to be performed.
+
+**_DO NOT MODIFY Settings.js.example OR db.json.example during this project!!!_**
 
 ## Feature List
 
@@ -81,6 +83,23 @@ Add a **`UserSearch`** component to your application where the user can type in 
 1. Eateries API
 
 Display all matching items in a **`SearchResults`** component. Each item in the search results would have a button next to it that would allow the user to add that item to their itinerary preview.
+
+## API Keys
+
+All API keys should be added to `Settings.js`. Once again, **_DO NOT MODIFY Settings.js.example!_**
+
+## Accessing the API keys
+
+In any module where you need your API keys,
+
+```js
+import { settings } from "./Settings.js"
+
+// Since settings is an object, you can use dot notation or square bracket notation to access the properties.
+settings.npsKey
+settings["weatherKey"]
+```
+
 
 ## National Park Service API
 
