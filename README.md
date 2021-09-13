@@ -1,6 +1,6 @@
 # Holiday Road from Nashville
 
-You and your teammates have been contracted by the National Parks Service to build an application that will allow people to plan excursions for trips to our country's beautiful national parks. The starting point of each trip will be Nashville, TN with a national park destination and two other stops along the way. The additional stops will include one bizarrary and one Eatery.
+You and your teammates have been contracted by the National Parks Service to build an application that will allow people to plan excursions for trips to our country's beautiful national parks. The starting point of each trip will be Nashville, TN with a national park destination and two other stops along the way. The additional stops will include one Bizarrary and one Eatery.
 
 You are creating this app for a specific type of user. Choose one of the personas below as your target. Refer back to the persona when making choices about layout, content hierarchy, and usability. 
 
@@ -15,9 +15,9 @@ This is going to be your first full, professional Sprint. A Sprint is part of th
 
 During this sprint, the focus will be on learning, much more than doing. We estimate that most teams could get this project done in 2-3 days. We are giving you 5.
 
-To accomplish maximum learning, the following requirement is placed on the team, and will be monitored by your team lead. All PRs should use the `pull_request_template.md` provide in the repo. When a teammate submits a PR, and you are ready to review it, then you and the submitter must sit together and review all of the code that was written and included in the PR. Also, if any other teammates would like to review the code, then you must include them on the review, too.
+To accomplish maximum learning, the following requirement is placed on the team, and will be monitored by your team lead. All PRs should use the [pull_request_template.md](pull_request_template.md) provided in the repo. Once a teammate submits a PR and you are ready to review it, you and the submitter must sit together and review all of the code that was written and included in the PR. Also, if any other teammates would like to review the code, you must include them on the review, too.
 
-Only when you feel you understand all of the code, then you may complete the testing of the feature and provide approval for merging.
+Only when you feel you understand all of the code, you may complete the testing of the feature and provide approval for merging.
 
 ### Settings
 
@@ -36,11 +36,11 @@ After each teammate clones the repository, each member must perform the followin
 
 ### Building the Trip
 
-* User should be able to select a state and then you will list all national parks for that state in a dropdown. When user chooses one, display the name of the park in the **Trip Preview** section.
+* Choose a park: Display a dropdown list of states. Once a state has been selected, display all national parks in that state in another dropdown. When the user chooses a park, display the name of the park in the **Trip Preview** section.
 
-* List all bizarraries in a dropdown. When user chooses one, display the name of the bizarre attraction in the **Trip Preview** section.
+* Choose a bizarrary: Independent of the state/park selection, list **all** bizarraries in a dropdown. When the user chooses one, display the name of the bizarre attraction in the **Trip Preview** section.
 
-* List all eateries in a dropdown. When user chooses one, display the name of the eatery in the **Trip Preview** section.
+* Choose an eatery: Independent of the state/park selection, list **all** eateries in a dropdown. When the user chooses one, display the name of the eatery in the **Trip Preview** section.
 
 ### Trip Details
 
@@ -51,9 +51,9 @@ After each teammate clones the repository, each member must perform the followin
 * Once the user has selected a park, a bizarre attraction, and an eatery, the _Save Trip_ button should be enabled.
 * When the user clicks the _Save Trip_ button, the chosen items should be saved as an object in your own, local API that is managed by `json-server`. Each saved trip should appear in an aside bar on the side of the UI.
 
-### README.md
+### README
 You will need a complete `README.md` for this project. Be sure to include a screenshot of your ERD and Wireframe and listing of team members. 
-* [README Materials](https://github.com/nss-day-cohort-51/client-side-mastery/blob/main/book-2-giffygram/chapters/Project-Readme.md)
+* [README Resources](https://github.com/nss-day-cohort-51/client-side-mastery/blob/main/book-2-giffygram/chapters/Project-Readme.md)
 
 ## Personas
 | [Anna](./personas/persona-anna.png) | [Betsy](./personas/persona-betsy.png) | [Brittany](./personas/persona-brittany.png) | [Caroline](./personas/persona-caroline.png) | [Charles](./personas/persona-charles.png) | [Jake](./personas/persona-jake.png) | [Peter](./personas/persona-peter.png)
